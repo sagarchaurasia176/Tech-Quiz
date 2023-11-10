@@ -53,7 +53,10 @@ const JsQuestions = [{
     },
 ]
 
+//question and answer fucntions
+function questionsAndAnswer() {
 
+}
 
 //start btn
 playBtn.addEventListener("click", () => {
@@ -66,6 +69,5 @@ let btn = document.getElementById('scoreBtn');
 btn.addEventListener('click', () => {
         alert("comming soon !");
     }
-
 
 )
