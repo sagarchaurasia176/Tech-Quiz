@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechQuiz App</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <h1 class="bg-black text-left w-auto text-white p-5 left-2 font-mono">
+        TechQuiz</h1>
+    <!-- contaienr parts -->
+
+    <body class="bg-slate-950">
+
+        <button class="btn text-center ml-[50%] cursor-pointer bg-yellow-300 p-3">Play Game</button>
+
+        <div class="  w-[30%] container mt-10 m-auto px-6 py-8 ring-1
+                     ring-slate-900/5 " id="main-container">
+            <div class="flex text-black p-5 bg-white text-md text-center justify-center  font-normal  ">
+                I ❤ Js
+            </div>
+
+            <br>
+            <!-- serach sections -->
+            <div class="container w-[100%]  p-1  h-auto bg-white ">
+                <!-- attempt questions -->
+                <div class="main-upperPart bg-red-950 to-white p-4">
+                    <span class="text-white text-lg flex text-center justify-center ">
+                            <number class="text-white" id="numberIncrements">0/10</number>
+                        </span>
+                </div>
+
+                <br>
+                <div class="main-upperPart bg-blue-400 p-3">
+                    <span class="text-black text-lg flex">
+                            Q1-<p class="Questions">&nbsp;What is Dom in js ?</p></span>
+                </div>
+                <br>
+                <!--  options parts  -->
+                <div class="main-upperPart bg-slate-400  hover:bg-red-100 cursor-pointer transition-all  p-3">
+                    <span class="text-black text-lg flex">
+                            <num class="font-bold text-black">1-</num>
+                            &nbsp; <p class="QptionsA"></p>
+                        </span>
+                </div>
+                <br>
+                <!--  options parts  -->
+                <div class="main-upperPart bg-slate-400 p-3  hover:bg-red-100 cursor-pointer transition-all">
+                    <span class="text-black text-lg flex ">
+                            <num class="font-bold text-black">2-</num>
+                            &nbsp; <p class="QptionsB"></p>
+                        </span>
+                </div>
+                <br>
+                <!--  options parts  -->
+                <div class="main-upperPart bg-slate-400 p-3  hover:bg-red-100 cursor-pointer transition-all">
+                    <span class="text-black text-lg flex ">
+                            <num class="font-bold text-black">3-</num>
+                            <p class="QptionsC"></p>
+                        </span>
+                </div>
+                <br>
+                <!--  options parts  -->
+                <div class="main-upperPart bg-slate-400 p-3  hover:bg-red-100 cursor-pointer transition-all">
+                    <span class="text-black text-lg flex ">
+                            <num class="font-bold text-black">4-</num>
+                            <p class="QptionsD"></p>
+
+                        </span>
+                </div>
+
+                <!-- correct answer  -->
+                <div class="main-upperPart bg-slate-400 invisible p-3  hover:bg-red-100 cursor-pointer transition-all">
+                    <span class="text-black text-lg flex ">
+                            <p class="answer">&nbsp; Ans </p>
+                        </span>
+
+                </div>
+
+                <br><br>
+
+                <button type="button" id="scoreBtn" class="bg-red-400 p-2 w-auto h-auto flex border-spacing-4  border-r-2 relative text-center m-auto ">Click
+                        to Next</button>
+
+            </div>
+
+        </div>
+
+        <br>
+
+    </body>
+
+    <script src="./index.js"></script>
+
+</html>
