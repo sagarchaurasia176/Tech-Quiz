@@ -32,4 +32,5 @@ To run tests, run the following command
 
 
 ## Screenshots
- 
+ ![ca](https://github.com/sagarchaurasia176/Tech-Quiz/assets/101509099/22a64f6d-63b3-4da2-9840-68c4e936b45b)
+
