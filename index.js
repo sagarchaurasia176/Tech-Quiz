@@ -71,3 +71,8 @@ btn.addEventListener('click', () => {
     }
 
 )
+
+
+function questionAndAnsw() {
+    console.log("comming soon");
+}
