@@ -55,7 +55,7 @@ const JsQuestions = [{
 
 //question and answer fucntions
 function questionsAndAnswer() {
-
+    let check = "this is working "
 }
 
 //start btn
@@ -71,8 +71,3 @@ btn.addEventListener('click', () => {
     }
 
 )
-
-
-function questionAndAnsw() {
-    console.log("comming soon");
-}
