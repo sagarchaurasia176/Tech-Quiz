@@ -1,16 +1,9 @@
 const quesitonsWordIncreased = document.querySelector('#numberIncrements');
 const container = document.querySelector('#main-container');
 const playBtn = document.querySelector(".btn");
-const Answer = document.querySelector('.answer');
 //question DATA
 
-const Questions = document.querySelector('.Questions');
-let optionsA = document.querySelector('.QptionsA');
-let optionsB = document.querySelector('.QptionsB');
-let optionsC = document.querySelector('.QptionsC');
-let optionsD = document.querySelector('.QptionsD');
-
-
+let correct;
 // QUESTIONS ARRAY OF OBJ 
 const JsQuestions = [{
         Questions: "what is js ?",
@@ -18,6 +11,7 @@ const JsQuestions = [{
         optionsB: "It is used to display additional features into website",
         optionsC: "It is used to improve logical building",
         optionsD: "All the above",
+        correct: 'D'
     },
 
     {
@@ -26,6 +20,7 @@ const JsQuestions = [{
         optionsB: "It is used to stored the variable",
         optionsC: "It is tell about any variable properties",
         optionsD: "All the above",
+        correct: 'D'
     },
 
 
@@ -35,6 +30,7 @@ const JsQuestions = [{
         optionsB: " x.isArray() ",
         optionsC: "x instanceof Array ",
         optionsD: " typeof Array ",
+        correct: 'D'
     },
 
     {
@@ -43,6 +39,7 @@ const JsQuestions = [{
         optionsB: " for loop, do...until loop, while loop",
         optionsC: "for loop, while loop, repeat...until loop",
         optionsD: "All the above",
+        correct: 'A'
     },
     {
         Questions: "What is the purpose of the break statement in a loop? ",
@@ -50,13 +47,54 @@ const JsQuestions = [{
         optionsB: " It skips the current iteration and moves to the next one. ",
         optionsC: " It restarts the loop from the beginning. ",
         optionsD: "All the above",
+        correct: 'A'
     },
 ]
 
-//question and answer fucntions
-function questionsAndAnswer() {
-    let check = "this is working "
+
+//questions part
+
+// options parts
+
+// let optionsA = document.querySelector('.optionsA');
+// let optionsB = document.querySelector('.optionsB');
+// let optionsC = document.querySelector('.optionsC');
+// let optionsD = document.querySelector('.optionsD');
+let index = 1;
+let quesBox = document.querySelector('.Questions');
+let options = document.querySelectorAll('.check');
+
+const loadQues = () => {
+    const data = JsQuestions[index];
+    quesBox.innerHtml = `{data.Questions}`;
+    //   options parts 
+    options[0].innerHTML = data.optionsA;
+    options[1].innerHTML = data.optionsB;
+    options[2].innerHTML = data.optionsC;
+    options[3].innerHTML = data.optionsD;
 }
+loadQues();
+
+//submit click fucntions
+// const submitBtn = document.querySelector("#submitBtn");
+
+// submitBtn.addEventListener('click', () => {
+//     console.log(optionsClicked());
+// })
+
+// function optionsClicked() {
+//     options.forEach((input) => {
+//         if (input.checked) {
+//             return input.value;
+//         }
+
+//     })
+
+// }
+
+
+
+
 
 //start btn
 playBtn.addEventListener("click", () => {
@@ -67,7 +105,6 @@ playBtn.addEventListener("click", () => {
 // scored Btn listener 
 let btn = document.getElementById('scoreBtn');
 btn.addEventListener('click', () => {
-        alert("comming soon !");
-    }
 
-)
+
+})
